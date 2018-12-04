@@ -1,0 +1,63 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    background-color: #EBEBEC;
+    color: #114A7E;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    background-color: white;
+    margin: 0 0 0 0;
+}
+nav ul {
+    list-style: none;
+    position: relative;
+    top: 0;
+    justify-content: space-between;
+}
+#intro > p {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+/*
+header > img {
+    float: center;
+    margin-top:
+}
+*/
+/*
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    width: 30%;
+}
+*/
+.content {
+    margin: 0 2% 0 2%;
+    border-radius: 0 0 2pt 2pt;
+    background-color: white;
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    height: 5em;
+}
+.header {
+    height: 5em;
+}
+header {
+    height: 5em;
+}
+/*display: flex, met justify-content: allerlei verschillende dingen*/
+/*logo links, rechts recht? alles naar left, maar logo dan margin geven*/

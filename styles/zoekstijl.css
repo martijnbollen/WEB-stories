@@ -1,0 +1,166 @@
+font@face {
+    font-family: TheSans;
+    src: url(TheSans-B4SemiLight.otf);
+}
+
+body {
+    font-family: TheSans;
+    background-color: #EBEBEC;
+    color: #114A7E;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    width: 95%;
+    margin: 5% 2.5%;
+    border-radius: 2%;
+    box-shadow: 0em 0.2em 1em 0em #494949;
+    margin-bottom: 9%;
+}
+
+article {
+    background-color: white;
+    width: 95%;
+    margin: 5% 2.5%;
+    border-radius: 2%;
+    box-shadow: 0em 0.2em 1em 0em #494949;
+    margin-bottom: 9%;
+}
+
+form {
+    background-color: white;
+    width: 95%;
+    margin: 5% 2.5%;
+    border-radius: 2%;
+    box-shadow: 0em 0.2em 1em 0em #494949;
+    margin-bottom: 9%;
+}
+
+article img {
+    width: 100%;
+    margin-bottom: 0%;
+    border-radius: 2% 2% 0 0;
+}
+
+article p {
+    padding-left: 5%;
+    margin-top: 0.5%;
+    margin-bottom: 0%;
+    color: #15679c;
+}
+
+p:last-of-type {
+    padding-bottom: 5%;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-top: 1%;
+    border-bottom: 2px solid #EB1F30;
+    margin-right: 55%;
+    padding-left: 2%;
+    margin-left: 4%;
+    margin-bottom: 7%;
+    font-weight: 100;
+    padding-bottom: 1%;
+}
+
+img:nth-of-type(2) {
+    width: 15%;
+    margin-left: 80%;
+}
+
+
+
+legend {
+    border-bottom: 3px solid #EB1F30;
+    margin-left: 4%;
+    padding-left: 3%;
+    margin-right: 17%;
+    font-size: 1.3em;
+    font-weight: 100;
+    padding-top: 3%;
+    padding-bottom: 1%;
+
+}
+
+/*
+.checkbox {
+
+}
+*/
+
+label {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 7%;
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    margin-top: 0%;
+}
+
+.header {
+    height: 2em;
+
+}
+
+header {
+    height: 2em;
+
+}
+
+ul:nth-of-type(2) {
+    columns: 2;
+    padding-bottom: 4%;
+}
+
+/*
+input[type=checkbox] {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+}
+
+input[type=radio] {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+}
+*/
+
+/*
+.checkbox {
+    outline: 3px solid #114A7E;
+}
+.radio {
+    outline: 3px solid #114A7E;
+    outline-offset: inherit
+
+}
+*/

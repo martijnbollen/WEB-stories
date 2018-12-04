@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoeken</title>
+    <link rel="stylesheet" href="styles/zoekstijl.css">
+    <script src="zoeken.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><img src="images/menu.png" alt="" class="header"></li>
+            <li><img src="images/logo.png" alt="" class="header"></li>
+            <li><img src="images/zoek.png" alt="" class="header"></li>
+        </ul>
+    </header>
+    <h1>
+        Waar ben je naar op zoek?
+    </h1>
+    <form action="get">
+        <legend>Hoe lang wil je lezen?</legend>
+        <ul>
+            <li><input type="radio" id="4min" name="leestijd" class="radio">
+                <label for="4min">4 min of minder</label></li>
+            <li><input type="radio" id="5-10" name="leestijd" class="radio">
+                <label for="5-10">5 - 10 min</label></li>
+            <li><input type="radio" id="11min" name="leestijd" class="radio">
+                <label for="11min">11 min of meer</label></li>
+        </ul>
+
+        <legend>Welke genre(s) vind je leuk?</legend>
+        <ul>
+            <li><input type="checkbox" id="thriller" class="checkbox">
+                <label for="thriller">Thriller</label></li>
+            <li><input type="checkbox" id="humor" class="checkbox">
+                <label for="humor">Humor</label></li>
+            <li><input type="checkbox" id="horror" class="checkbox">
+                <label for="horror">Horror</label></li>
+            <li><input type="checkbox" id="detective" class="checkbox">
+                <label for="detective">Detective</label></li>
+            <li><input type="checkbox" id="sci-fi" class="checkbox">
+                <label for="sci-fi">Sci-Fi</label></li>
+            <li><input type="checkbox" id="roman" class="checkbox">
+                <label for="roman">Roman</label></li>
+        </ul>
+    </form>
+    <section>
+
+    </section>
+    <h2>Alle 99 verhalen!</h2>
+    <article id="detectiveverhaal">
+        <img src="images/gefrustreerd.jpeg" alt="">
+        <h3>Gefrustreerd</h3>
+        <p>Kris Kuipers</p>
+        <p>Detective</p>
+        <p>21 nov '18</p>
+    </article>
+    <article id="romanverhaal">
+        <img src="images/droom.jpeg" alt="">
+        <h3>Droom</h3>
+        <!--        <img src="images/hart.png" alt="">-->
+        <p>Nassera Grampon</p>
+        <p>Roman</p>
+        <p>21 nov '18</p>
+    </article>
+    <article id="humorverhaal">
+        <img src="images/beroemd.jpeg" alt="">
+        <h3>Beroemd</h3>
+        <!--        <img src="images/hart.png" alt="">-->
+        <p>Jona ...</p>
+        <p>Humor</p>
+        <p>21 nov '18</p>
+    </article>
+
+</body>
+</html>
