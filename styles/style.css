@@ -108,7 +108,7 @@ article {
     box-shadow: 0em 0.1em 0.5em 0em #494949;
     display: flex;
     flex-direction: column;
-    height: 23em;
+    height: 21em;
 }
 
 form {
@@ -184,9 +184,9 @@ article button:first-of-type {
     border: none;
     background-color: white;
     width: 50%;
-    margin-left: 3%;
+    margin-left: 24px;
     margin-bottom: 1.6%;
-    padding-left: 10%;
+    padding-left: 14%;
     font-family: TheSans;
     color: #114A7E;
     font-size: 1em;
