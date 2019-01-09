@@ -16,16 +16,36 @@
             <li class="logo"><a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt=""></a></li>
             <li><a href="note.html"><img src="images/note.png" alt=""></a><a href="zoeken.html"><img src="images/zoek.png" alt=""></a></li>
         </ul>
-    </header>
-    <img src="images/RET.jpg" class="superfoto" alt="">
-    <h1>
-        Welkom op deze site! Leuk dat je er bent
-    </h1>
-    <q>Om even helemaal in weg te dwalen!</q>
-    <p class="intro">Op deze site staan allerlei verhalen, vormgegeven als prachtige schilderijen. Bekijk er eentje hieronder of zoek er een m.b.v. de zoekknop</p>
 
-
-    <h2>Meest geliefde verhalen</h2>
+    <img src="images/zoekfoto.png" class="superfoto" alt="">
+    <form action="get">
+        <fieldset>Hoe lang wil je lezen?</fieldset>
+        <ul>
+            <li><input type="radio" id="4min" name="leestijd" class="radio">
+                <label for="4min">4 min of minder</label></li>
+            <li><input type="radio" id="5-10" name="leestijd" class="radio">
+                <label for="5-10">5 - 10 min</label></li>
+            <li><input type="radio" id="11min" name="leestijd" class="radio">
+                <label for="11min">11 min of meer</label></li>
+        </ul>
+        <fieldset>Welke genre(s) vind je leuk?</fieldset>
+        <ul>
+            <li><input type="checkbox" id="thriller" class="checkbox">
+                <label for="thriller">Thriller</label></li>
+            <li><input type="checkbox" id="humor" class="checkbox">
+                <label for="humor">Humor</label></li>
+            <li><input type="checkbox" id="horror" class="checkbox">
+                <label for="horror">Horror</label></li>
+            <li><input type="checkbox" id="detective" class="checkbox">
+                <label for="detective">Detective</label></li>
+            <li><input type="checkbox" id="sci-fi" class="checkbox">
+                <label for="sci-fi">Sci-Fi</label></li>
+            <li><input type="checkbox" id="roman" class="checkbox">
+                <label for="roman">Roman</label></li>
+        </ul>
+        <button>Verras me</button>
+    </form>
+    <h2>Alle 99 verhalen!</h2>
     <main>
         <article id="detectiveverhaal">
             <picture><img src="images/gefrustreerd.jpeg" alt=""></picture>
@@ -82,7 +102,6 @@
             </button></footer>
         </article>
     </main>
-
 </body>
 
 </html>
