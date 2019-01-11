@@ -178,7 +178,7 @@ article p:first-of-type {
 }
 
 article button:first-of-type {
-    background-image: url(../images/hart.png);
+    background-image: url(../images/hartgevuld.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 1.5em;
@@ -196,7 +196,7 @@ article button:first-of-type {
 }
 
 article button:first-of-type:active {
-    background-image: url(../images/hartgevuld.png);
+    background-image: url(../images/hart.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 1.5em;

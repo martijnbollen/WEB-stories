@@ -1,14 +1,16 @@
-var checkbox = document.getElementById("humor");
+var downloadknop = document.querySelector('footer button:last-of-type');
+console.log(downloadknop)
 
-function filter() {
-    if (checkbox.checked) {
-        document.getElementById("romanverhaal").style.display = 'none';
-        document.getElementById("detectiveverhaal").style.display = 'none';
-    } else {
-        document.getElementById("romanverhaal").style.display = 'block';
-        document.getElementById("detectiveverhaal").style.display = 'block';
-    }
+var likeknop = document.querySelector('article button:first-of-type');
 
-    filter();
+downloadknop.addEventListener("click",function(){
+  //hier omoet iets gebeuren
+    console.log("doet ie ut?")
+})
 
-}
+//downloadknop.addEventListener("click",functienaam())
+//
+//
+//function functienaam(){
+//    //hier
+//}
