@@ -1,10 +1,7 @@
-font@face {
-    font-family: TheSans;
-    src: url(TheSans-B4SemiLight.otf);
-}
-
 body {
-    font-family: TheSans;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #114A7E;
     background-color: #EBEBEC;
     margin: 0;
@@ -66,9 +63,9 @@ header > ul > li > a > img {
 }
 
 .logo {
-    align-self: stretch;
     padding-top: 0px;
 }
+
 .intro {
     width: 85%;
     margin: 5% auto 6% auto;
@@ -94,7 +91,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 100;
+    font-weight: inherit;
     font-size: 1.4em;
     text-align: center;
     margin: 4% auto 2% auto;
@@ -104,7 +101,7 @@ article {
     background-color: white;
     width: 85%;
     margin: 0% 7.5% 5% 7.5%;
-    border-radius: 2%;
+    border-radius: 1%;
     box-shadow: 0em 0.1em 0.5em 0em #494949;
     display: flex;
     flex-direction: column;
@@ -113,9 +110,9 @@ article {
 
 form {
     background-color: white;
-    width: 95%;
-    margin: 5% 2.5%;
-    border-radius: 2%;
+    width: 85%;
+    margin: 5% 6.5%;
+    border-radius: 1%;
     box-shadow: 0em 0.2em 1em 0em #494949;
     margin-bottom: 9%;
 }
@@ -129,12 +126,12 @@ form > button {
     font-size: 1em;
     border-radius: 6pt;
     border: 0.5px solid grey;
-    font-family: TheSans;
     color: inherit;
+    background-color: white;
 }
 
 article picture {
-    border-radius: 2% 2% 0 0;
+    border-radius: 1% 1% 0 0;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -153,7 +150,7 @@ h3 {
     padding-bottom: 2%;
     margin: 24px 12px 0 12px;
     border-bottom: 2px solid #EB1F30;
-    font-weight: 100;
+    font-weight: inherit;
 }
 
 article a {
@@ -188,25 +185,10 @@ article button:first-of-type {
     margin-left: 12px;
     margin-bottom: 1.6%;
     padding-left: 8%;
-    font-family: TheSans;
     color: #114A7E;
     font-size: 1em;
     outline: none;
 
-}
-
-article button:first-of-type:active {
-    background-image: url(../images/hartgevuld.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1.5em;
-    border: none;
-    background-color: white;
-    width: 50%;
-    font-family: TheSans;
-    color: #114A7E;
-    font-size: 1em;
-    outline: none;
 }
 
 article button:nth-of-type(2) {
@@ -220,75 +202,18 @@ article button:nth-of-type(2) {
     background-size: 1.5em;
     width: 50%;
     border: none;
-    font-family: TheSans;
     font-size: 1em;
     color: #114A7E;
     outline: none;
-}
-
-/*
-article button:nth-of-type(2):active {
-    background-color: white;
-    background-image: url(../images/downloaddone.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1.5em;
-    width: 50%;
-    border: none;
-    font-family: TheSans;
-    font-size: 1em;
-    color: #114A7E;
-    outline: none;
-}
-*/
-
-.animatie {
-    animation: downloadable 3s;
-    animation-iteration-count: 1;
-}
-
-@keyframes downloadable {
-    0% {
-        content: "Download";
-        background-image: url(../images/download.svg);
-    }
-    15% {
-        content: "Downloaden.";
-        background-image: url(../images/download.svg);
-    }
-    30% {
-        content: "Downloaden..";
-        background-image: url(../images/download.svg);
-    }
-    45% {
-        content: "Downloaden...";
-        background-image: url(../images/download.svg);
-    }
-    60% {
-        content: "Downloaden";
-        background-image: url(../images/download.svg);
-    }
-    75% {
-        content: "Downloaden.";
-        background-image: url(../images/download.svg);
-    }
-    85 {
-        content: "Downloaden..";
-        background-image: url(../images/download.svg);
-    }
-    100% {
-        content: "Gedownload";
-        background-image: url(../images/downloaddone.svg);
-    }
 }
 
 fieldset {
     border-bottom: 3px solid #EB1F30;
     margin-left: 4%;
     padding-left: 3%;
-    margin-right: 17%;
+    margin-right: 13%;
     font-size: 1.3em;
-    font-weight: 100;
+    font-weight: inherit;
     padding-top: 3%;
     padding-bottom: 1%;
     border-top: 0;
@@ -316,15 +241,14 @@ ul:nth-of-type(2) {
 @media (min-width: 48em) and (max-width: 63.99em) {
     header {
         background-color: white;
-        padding-bottom: 0.4%;
     }
 
-    .zoeken {
-        background-color: white;
+    header > ul > li:first-of-type {
+        padding-left: 2%;
     }
 
-    .account {
-        background-color: white;
+    header > ul > li:last-of-type {
+        padding-right: 2%;
     }
 
     .superfoto {
@@ -339,17 +263,19 @@ ul:nth-of-type(2) {
         margin: -6% auto 4% auto;
         width: 50%;
         color: white;
+        display: none;
     }
 
     q {
         display: inline-block;
-        width: 30%;
+        width: 25%;
         font-weight: bold;
-        font-size: 1.95em;
+        font-size: 1.6em;
         border-left: 2px solid #114A7E;
         border-right: 2px solid #114A7E;
         padding: 0 1%;
         text-align: center;
+        margin-left: 3%;
     }
 
     .intro {
@@ -362,7 +288,7 @@ ul:nth-of-type(2) {
 
     form {
         width: 50%;
-        margin-top: -30%;
+        margin-top: -250px;
         margin-bottom: 1%;
         margin-left: 3%;
         z-index: 1;
@@ -388,6 +314,109 @@ ul:nth-of-type(2) {
     }
 
     h3 {
+        margin: 24px 24px 16px 24px;
+    }
+
+    article p {
+        color: #15679c;
+        margin: 0 24px;
+    }
+
+    article button:first-of-type {
+        margin-left: 24px;
+        font-size: 0.9em;
+        padding-right: 0;
+    }
+
+
+    article button:nth-of-type(2) {
+        font-size: 0.9em;
+    }
+
+}
+
+@media (min-width: 64em) {
+    header {
+        background-color: white;
+    }
+
+    header > ul > li:first-of-type {
+        padding-left: 17%;
+    }
+
+    header > ul > li:last-of-type {
+        padding-right: 17%;
+    }
+
+    .superfoto {
+        display: block;
+        height: 22em;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        font-weight: 400;
+        margin: -3% auto 2% auto;
+        width: 50%;
+        color: white;
+    }
+
+    .gone {
+        display: none;
+    }
+
+    q {
+        display: inline-block;
+        width: 17%;
+        font-weight: bold;
+        font-size: 1.95em;
+        border-left: 2px solid #114A7E;
+        border-right: 2px solid #114A7E;
+        padding: 0 1%;
+        text-align: center;
+        margin-left: 17%;
+    }
+
+    .intro {
+        display: inline-block;
+        width: 40%;
+        margin:  0% 15% 0% 4%;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    form {
+        width: 30%;
+        margin-top: -340px;
+        margin-bottom: 1%;
+        margin-left: 17%;
+        z-index: 1;
+        position: relative;
+    }
+
+    h2 {
+        margin: 3% auto 1% auto;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 70%;
+        padding: 0 15%;
+        box-sizing: content-box;
+    }
+
+    article {
+        background-color: white;
+        border-radius: 1%;
+        box-shadow: 0em 0.1em 0.5em 0em #494949;
+        margin: 0% auto 10% auto;
+        display: flex;
+        height: 27em;
+    }
+
+    h3 {
         margin: 24px 24px 0 24px;
     }
 
@@ -400,10 +429,4 @@ ul:nth-of-type(2) {
         margin-left: 24px;
     }
 
-}
-
-@media (min-width: 64em) {
-    main {
-
-    }
 }

@@ -1,6 +1,6 @@
 body {
     background-color: #EBEBEC;
-    font-family: fantasy;
+    font-family: RalewayThin;
     display: flex;
     justify-content: center;
 }
@@ -17,12 +17,15 @@ main {
     width: 73%;
 }
 p {
-    width: 50%;
+    width: 55%;
     text-align: center;
     margin: 90% auto 0% auto;
+    font-family: raleway, sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 48em) and (max-width: 63.99em) {
     body {
         background-color: black;
     }
@@ -30,16 +33,40 @@ p {
     main {
         background-color: white;
         padding: 80% auto 0 auto;
-        margin: 0%;
+        margin: 0 15%;
     }
 
     .setting {
         height: 100%;
+        width: 70%;
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
+}
+
+@media (min-width: 64em) {
+    body {
+        background-color: black;
+    }
+
+    main {
+        background-color: white;
+        padding: 70% auto 0 auto;
+        margin: 0 32.5%;
+    }
+
+    .setting {
+        height: 100%;
+        width: 35%;
+    }
+
+    p {
+        font-size: 1.6em;
+    }
+
+}
 }
 
