@@ -151,6 +151,10 @@ h3 {
     font-weight: inherit;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 article a {
     text-decoration: none;
     color: #114A7E;
