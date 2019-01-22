@@ -321,8 +321,11 @@ ul {
 
     .superfoto {
         display: block;
-        height: 22em;
+        height: 17em;
         overflow: hidden;
+        margin-left: 17%;
+        margin-right: 17%;
+        width: 66%;
     }
 
     h1 {
