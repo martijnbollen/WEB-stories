@@ -9,7 +9,7 @@ likeknoppen.forEach(function(likeknop) {
        if (this.style.backgroundImage="url(images/hart.png)") {
            console.log('vullen');
            this.style.backgroundImage="url(images/hartgevuld.png)";
-           update.innerHTML="1 verhaal toegevoegt aan geliefde verhalen";
+           update.innerHTML="1 verhaal toegevoegd aan geliefde verhalen";
            update.classList.add('actie');
            update.addEventListener("animationend", function(){
                update.classList.remove('actie');

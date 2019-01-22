@@ -340,7 +340,6 @@ fieldset:nth-of-type(2) > ul {
         margin-top: -14rem;
         margin-bottom: 1%;
         margin-left: 3%;
-        z-index: 1;
         position: relative;
     }
 
@@ -435,10 +434,9 @@ fieldset:nth-of-type(2) > ul {
 
     form {
         width: 30%;
-        margin-top: -19em;
-        margin-bottom: 1%;
+        margin-top: -14em;
+        margin-bottom: 0%;
         margin-left: 17%;
-        z-index: 1;
         position: relative;
     }
 
