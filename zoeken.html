@@ -11,25 +11,33 @@
 
 <body>
     <header>
-        <ul>
-            <li><a href="account.html"><img src="images/hart.png" alt=""></a></li>
-            <li class="logo"><a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt=""></a></li>
-            <li><a href="note.html"><img src="images/note.png" alt=""></a><a href="zoeken.html"><img src="images/zoek.png" alt=""></a></li>
-        </ul>
+       <nav>
+            <ul>
+                <li><a href="account.html"><img src="images/hart.png" alt=""></a></li>
+                <li class="logo"><a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt=""></a></li>
+                <li><a href="note.html"><img src="images/note.png" alt=""></a><a href="zoeken.html"><img src="images/zoek.png" alt=""></a></li>
+            </ul>
+        </nav>
+        <p id="update"></p>
 
-    <img src="images/zoekfoto2.jpg" class="superfoto" alt="">
-    <h1 class="gone">Waar ben je naar op zoek?</h1>
+        <img src="images/zoekfoto2.jpg" class="superfoto" alt="">
+        <h1 class="gone">
+            Waar ben je naar op zoek?
+        </h1>
+    </header>
     <form action="get">
-        <fieldset>Hoe lang wil je lezen?</fieldset>
-        <ul>
-            <li><input type="radio" id="4min" name="leestijd" class="radio">
-                <label for="4min">4 min of minder</label></li>
-            <li><input type="radio" id="5-10" name="leestijd" class="radio">
-                <label for="5-10">5 - 10 min</label></li>
-            <li><input type="radio" id="11min" name="leestijd" class="radio">
-                <label for="11min">11 min of meer</label></li>
-        </ul>
-        <fieldset>Welke genre(s) vind je leuk?</fieldset>
+        <fieldset>
+           <legend>Hoe lang wil je lezen?</legend>
+            <ul>
+                <li><input type="radio" id="4min" name="leestijd" class="radio">
+                    <label for="4min">4 min of minder</label></li>
+                <li><input type="radio" id="5-10" name="leestijd" class="radio">
+                    <label for="5-10">5 - 10 min</label></li>
+                <li><input type="radio" id="11min" name="leestijd" class="radio">
+                    <label for="11min">11 min of meer</label></li>
+            </ul>
+        </fieldset>
+        <fieldset><legend>Welke genre(s) vind je leuk?</legend>
         <ul>
             <li><input type="checkbox" id="thriller" class="checkbox">
                 <label for="thriller">Thriller</label></li>
@@ -44,6 +52,7 @@
             <li><input type="checkbox" id="roman" class="checkbox">
                 <label for="roman">Roman</label></li>
         </ul>
+        </fieldset>
         <button>Verras me</button>
     </form>
     <h2>Alle 99 verhalen!</h2>
@@ -104,6 +113,7 @@
         </article>
 
     </main>
+<script src="liken.js"></script>
 </body>
 
 </html>

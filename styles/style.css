@@ -5,20 +5,9 @@ body {
     color: #114A7E;
     background-color: #EBEBEC;
     margin: 0;
-
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-*/
-    /*
-    display: grid;
-    grid-template-rows: 5% 3% 4% 3% 30% 5% 30% 5% 30% 5%;
-    grid-template-columns: 2.5% 95% 2.5%;
-*/
 }
 
-header > ul {
+nav > ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -41,13 +30,16 @@ header > ul {
     display: none;
 }
 
-header {
+nav {
     height: 2.5em;
     width: 100%;
     background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
-header > ul {
+nav > ul {
     height: 2.5em;
     display: flex;
     justify-content: space-between;
@@ -57,14 +49,54 @@ header > ul {
     width: 100%;
 }
 
-header > ul > li > a > img {
-    height: 2.2em;
-    padding-top: 5px;
+nav > ul > li > a > img {
+    height: 1.6em;
+    padding-top: 0.4rem;
+}
+
+nav > ul > li:last-of-type {
+    display: flex;
+    flex-direction: row;
+    padding-right: 3%;
+}
+
+nav > ul > li:first-of-type {
+    padding-left: 3%;
 }
 
 .logo {
-    padding-top: 0px;
+    padding-top: 0;
 }
+
+#update {
+    position: fixed;
+    top: -2%;
+    z-index: 0;
+    background-color: white;
+    border: 1px solid #114A7E;
+    padding: 0.5em;
+}
+
+.actie {
+    animation: updaten 3s linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes updaten {
+    0% {
+        top: -2%;
+    }
+    40% {
+        top: 2.9%;
+    }
+    60% {
+        top: 2.9%;
+    }
+    100% {
+        top: -2%;
+    }
+}
+
 
 .intro {
     width: 85%;
@@ -86,7 +118,7 @@ h1 {
     font-weight: 100;
     font-size: 1.3em;
     text-align: center;
-    margin: 5% auto;
+    margin: 15% auto 5% auto;;
     width: 70%;
 }
 
@@ -94,7 +126,10 @@ h2 {
     font-weight: inherit;
     font-size: 1.4em;
     text-align: center;
-    margin: 4% auto 2% auto;
+    width: 70%;
+    padding: 3% 15% 3% 15%;
+    background-color: #F5F5F6;
+    margin: 0;
 }
 
 article {
@@ -132,7 +167,6 @@ form > button {
 
 article picture {
     border-radius: 1% 1% 0 0;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +182,7 @@ picture img {
 h3 {
     font-size: 1.4em;
     padding-bottom: 2%;
-    margin: 24px 12px 0 12px;
+    margin: 1.5em 0.75em 0 0.75em;
     border-bottom: 2px solid #EB1F30;
     font-weight: inherit;
 }
@@ -164,7 +198,7 @@ article a {
 
 article p {
     color: #15679c;
-    margin: 0 12px;
+    margin: 0 0.75em;
 }
 
 article footer {
@@ -186,13 +220,23 @@ article button:first-of-type {
     border: none;
     background-color: white;
     width: 50%;
-    margin-left: 12px;
+    margin-left: 0.75em;
     margin-bottom: 1.6%;
     padding-left: 8%;
     color: #114A7E;
     font-size: 1em;
-    outline: none;
+    transition: 0.3s all linear;
 
+}
+
+article button:first-of-type:hover {
+    background-size: 2em;
+    background-image: url(../images/hartgevuld.png);
+
+}
+
+.liked {
+    background-image: url(../images/hartgevuld.png);
 }
 
 article button:nth-of-type(2) {
@@ -208,14 +252,13 @@ article button:nth-of-type(2) {
     border: none;
     font-size: 1em;
     color: #114A7E;
-    outline: none;
 }
 
-fieldset {
+legend {
     border-bottom: 3px solid #EB1F30;
     margin-left: 4%;
     padding-left: 3%;
-    margin-right: 13%;
+    margin-right: 10%;
     font-size: 1.3em;
     font-weight: inherit;
     padding-top: 3%;
@@ -225,34 +268,37 @@ fieldset {
     border-right: 0;
 
 }
+fieldset {
+    border: none;
+}
 
 ul {
     list-style: none;
     padding-left: 7%;
 }
 
-ul:nth-of-type(2) {
+fieldset:nth-of-type(2) > ul {
     columns: 2;
 }
 
 @media (min-width: 31em) and (max-width: 47.9em) {
     article {
-        max-width: 407px;
-        margin: 4% auto 5% auto;
+        max-width: 25rem;
+        margin: 0% auto 5% auto;
     }
 }
 
 @media (min-width: 48em) and (max-width: 63.99em) {
-    header {
+    nav {
         background-color: white;
     }
 
-    header > ul > li:first-of-type {
+    nav > ul > li:first-of-type {
         padding-left: 2%;
     }
 
-    header > ul > li:last-of-type {
-        padding-right: 2%;
+    nav > ul > li:last-of-type {
+        padding-right: 3%;
     }
 
     .superfoto {
@@ -275,11 +321,10 @@ ul:nth-of-type(2) {
         width: 25%;
         font-weight: bold;
         font-size: 1.6em;
-        border-left: 2px solid #114A7E;
-        border-right: 2px solid #114A7E;
         padding: 0 1%;
         text-align: center;
         margin-left: 3%;
+        margin-top: 1%;
     }
 
     .intro {
@@ -292,7 +337,7 @@ ul:nth-of-type(2) {
 
     form {
         width: 50%;
-        margin-top: -250px;
+        margin-top: -14rem;
         margin-bottom: 1%;
         margin-left: 3%;
         z-index: 1;
@@ -300,7 +345,7 @@ ul:nth-of-type(2) {
     }
 
     h2 {
-        margin: 4% auto 2% auto;
+        margin: 0% auto 0% auto;
     }
 
     main {
@@ -318,16 +363,16 @@ ul:nth-of-type(2) {
     }
 
     h3 {
-        margin: 24px 24px 16px 24px;
+        margin: 1.5rem 1.5rem 1rem 1.5rem;
     }
 
     article p {
         color: #15679c;
-        margin: 0 24px;
+        margin: 0 1.5em;
     }
 
     article button:first-of-type {
-        margin-left: 24px;
+        margin-left: 1.5em;
         font-size: 0.9em;
         padding-right: 0;
     }
@@ -340,30 +385,29 @@ ul:nth-of-type(2) {
 }
 
 @media (min-width: 64em) {
-    header {
+    nav {
         background-color: white;
     }
 
-    header > ul > li:first-of-type {
+    nav > ul > li:first-of-type {
         padding-left: 17%;
     }
 
-    header > ul > li:last-of-type {
+    nav > ul > li:last-of-type {
         padding-right: 17%;
     }
 
     .superfoto {
         display: block;
-        height: 22em;
+        height: 17em;
         overflow: hidden;
+        margin-left: 17%;
+        margin-right: 17%;
+        width: 66%;
     }
 
     h1 {
-        font-size: 1.2em;
-        font-weight: 400;
-        margin: -3% auto 2% auto;
-        width: 50%;
-        color: white;
+        display: none;
     }
 
     .gone {
@@ -374,12 +418,11 @@ ul:nth-of-type(2) {
         display: inline-block;
         width: 17%;
         font-weight: bold;
-        font-size: 1.95em;
-        border-left: 2px solid #114A7E;
-        border-right: 2px solid #114A7E;
+        font-size: 1.6em;
         padding: 0 1%;
         text-align: center;
         margin-left: 17%;
+        margin-top: 1%;
     }
 
     .intro {
@@ -392,7 +435,7 @@ ul:nth-of-type(2) {
 
     form {
         width: 30%;
-        margin-top: -340px;
+        margin-top: -19em;
         margin-bottom: 1%;
         margin-left: 17%;
         z-index: 1;
@@ -400,7 +443,7 @@ ul:nth-of-type(2) {
     }
 
     h2 {
-        margin: 3% auto 1% auto;
+        margin: 3% auto 0% auto;
     }
 
     main {
@@ -421,16 +464,22 @@ ul:nth-of-type(2) {
     }
 
     h3 {
-        margin: 24px 24px 0 24px;
+        margin: 1.5rem 1.5rem 1rem 1.5rem;
     }
 
     article p {
         color: #15679c;
-        margin: 0 24px;
+        margin: 0 1.5em;
     }
 
     article button:first-of-type {
-        margin-left: 24px;
+        margin-left: 1.5em;
+        font-size: 0.8em;
     }
+
+    article button:nth-of-type(2) {
+        font-size: 0.8em;
+    }
+
 
 }
